@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bubble.Com</title>
-  </head>
-  <body>
-  <h1>Bubble Dot Com</h1>
-  <h2>Qué es</h2>
-  
-<p>Se refiere al crecimiento de los valores entre 1997-2000 de compañías que basan su negocio en internet.</p>
-		<div class="div1">	
-			<img width="30%"  src="https://pixfeeds.com/uploads/images/1/44/5296516-1280_515007022-bursting-of-the-dot-com-bubble.jpg"
-		</div>
 
-  <h2>Causas</h2>
-		<ul>
-		<li>Especulación en acciones de empresas tecnológicas, debido a que no se podía determinar sus valores de acciones.</li>
-		<li>Las empresas tenían el mismo plan de negocio lo cual provocó cambio de expectativas de los inversionistas.</li>
+<head>
+	<title>Bubble.Com</title>
+
+</head>
+
+<body>
+	<h1 id="pid">Bubble Dot Com</h1>
+	<h2>Qué es</h2>
+	<form>
+		<p><input value="Cambiar titulo" type="button"
+				onclick="changeText();" /></p>
+	</form>
+	<form>
+		<p><input value="Agregar Borde" type="button"
+				onclick="setBorderWidth(20);" /></p>
+	</form>
+	<p>Se refiere al crecimiento de los valores entre 1997-2000 de compañías que basan su negocio en internet.</p>
+	<div class="div1">
+		<img id="img1" width="30%" style="border: 5px solid green;"
+			src="https://pixfeeds.com/uploads/images/1/44/5296516-1280_515007022-bursting-of-the-dot-com-bubble.jpg">
+	</div>
+	<h2>Causas</h2>
+	<ul>
+		<li>Especulación en acciones de empresas tecnológicas, debido a que no se podía determinar sus valores de
+			acciones.</li>
+		<li>Las empresas tenían el mismo plan de negocio lo cual provocó cambio de expectativas de los
+			inversionistas.</li>
 		<li>Temor de inversionistas por la forma excesiva en que crecieron las accioneS</li>
-		</ul>
-		<div class="div1">	
-			<img width="30%"  src="https://static.seekingalpha.com/uploads/2018/1/25/9721001-15168720723962104.png"
-		</div>
-
-
-  <h2>Recomendaciones/ Observaciones</h2>
-		<ul>
+	</ul>
+	<div class="div1">
+		<img id="img2" width="30%" style="border: 5px solid green;"
+			src="https://static.seekingalpha.com/uploads/2018/1/25/9721001-15168720723962104.png"> </div>
+	<h2>Recomendaciones/ Observaciones</h2>
+	<ul>
 		<li>Que las empresas tomen en cuenta que la popularidad no equivale a las ganancias</li>
 		<li>Considerar el nerviosismo de los especuladores</li>
 		<li>Correlación en bolsa de valores</li>
-		</ul>		
+	</ul>
 
 
-		<div class="div1">	
-		<img width="30%"  src="https://thumbor.forbes.com/thumbor/711x460/http://specials-images.forbesimg.com/imageserve/34302712/960x0.jpg"
-		</div>
-		
-		<footer>Copyright 2019 Web Tecnologies</footer>
-  </body>
+	<div class="div1">
+		<img id="img3" width="30%" style="border: 5px solid green;"
+			src="https://thumbor.forbes.com/thumbor/711x460/http://specials-images.forbesimg.com/imageserve/34302712/960x0.jpg">
+	</div>
+	<footer>Copyright 2019 Web Tecnologies</footer>
+</body>
+
+<script>
+	function changeText() {
+		var p = document.getElementById("pid");
+
+		p.style.color = "blue"
+		p.style.fontSize = "18pt"
+	}
+	function setBorderWidth(width) {
+		document.getElementById("img1").style.borderWidth = width + "px";
+		document.getElementById("img1").style.borderColor = "blue";
+
+		document.getElementById("img2").style.borderWidth = width + "px";
+		document.getElementById("img2").style.borderColor = "blue";
+
+		document.getElementById("img3").style.borderWidth = width + "px";
+		document.getElementById("img3").style.borderColor = "blue";
+	}
+</script>
+
 </html>
